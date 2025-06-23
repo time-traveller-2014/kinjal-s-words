@@ -3,98 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kinjal's Words</title>
+  <title>Kinjal Patel | Research</title>
   <style>
+    @font-face {
+      font-family: 'Centaur';
+      src: local('Centaur');
+    }
     body {
       margin: 0;
-      font-family: Georgia, serif;
-      background: #fefefe;
-      color: #111;
+      font-family: 'Centaur', Georgia, serif;
+      background: #fdfcf9;
+      color: #222;
       padding: 2rem;
       max-width: 720px;
       margin: auto;
     }
-    h1 {
-      font-size: 2em;
+    header {
       text-align: center;
-      margin-bottom: 0.5em;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
       margin-bottom: 2rem;
-      font-size: 1rem;
     }
-    a {
-      text-decoration: none;
-      color: #444;
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
-    a:hover {
-      color: #000;
-    }
-    section {
-      margin-bottom: 3rem;
+    header h1 {
+      font-size: 2em;
+      margin: 0.3em 0;
     }
     h2 {
-      font-size: 1.5em;
-      margin-bottom: 0.5em;
+      font-size: 1.6em;
+      margin-top: 2rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
     }
     p, li {
-      line-height: 1.6;
+      line-height: 1.7;
+      font-size: 1.05em;
+    }
+    a {
+      color: #444;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Kinjal's Words</h1>
-  <nav>
-    <a href="#poetry">Poetry</a>
-    <a href="#prose">Prose</a>
-    <a href="#research">Research</a>
-    <a href="#about">About</a>
-  </nav>
+  <header>
+    <img src="images/profile.jpg" alt="Kinjal Patel">
+    <h1>Kinjal Patel</h1>
+  </header>
 
-  <section id="poetry">
-    <h2>Poetry</h2>
-    <p>Poems that heal, hurt, and hold. (You can paste samples or link PDFs here.)</p>
+  <section id="research">
+    <h2>Research Articles</h2>
+    <p>Peer-reviewed work exploring the structure, transitions, and decay properties of heavy baryons.</p>
     <ul>
-      <li><a href="#">Letter You’ll Never Send.pdf</a></li>
-      <li><a href="#">Fragments of Stillness</a></li>
+      <li>
+        <strong>Transition Properties of Doubly Heavy Baryons</strong><br />
+        <em>International Journal of Theoretical Physics (IJTP, 2025)</em><br />
+        <a href="research/dhb-ijtp.pdf" target="_blank">Read Online</a>
+      </li>
+      <li>
+        <strong>Electromagnetic & Weak Decays of Singly Heavy Baryons</strong><br />
+        <em>European Physical Journal Plus (EPJP, 2025)</em><br />
+        <a href="research/shb-epjp.pdf" target="_blank">Read Online</a>
+      </li>
     </ul>
-  </section>
-
-  <section id="prose">
-    <h2>Prose</h2>
-    <p>Unsent letters, diary entries, and the in-between words.</p>
-    <ul>
-      <li><a href="#">The City Was Quiet</a></li>
-      <li><a href="#">When You Forgot Me</a></li>
-    </ul>
-  </section>
-
- <section id="research">
-  <h2>Research Articles</h2>
-  <p>Peer-reviewed work exploring the structure, transitions, and decay properties of heavy baryons.</p>
-  <ul>
-    <li>
-      <strong>Transition Properties of Doubly Heavy Baryons</strong><br />
-      <em>International Journal of Theoretical Physics (IJTP, 2025)</em><br />
-      <a href="research/dhb-ijtp.pdf" target="_blank">Read Online</a>
-    </li>
-    <li>
-      <strong>Electromagnetic & Weak Decays of Singly Heavy Baryons</strong><br />
-      <em>European Physical Journal Plus (EPJP, 2025)</em><br />
-      <a href="research/shb-epjp.pdf" target="_blank">Read Online</a>
-    </li>
-  </ul>
-</section>
-
-
-
-  <section id="about">
-    <h2>About</h2>
-    <p>Researcher. Writer. Someone who studies particles and people—both what exists and what lingers in silence.</p>
   </section>
 </body>
 </html>
-Update homepage layout
