@@ -1,102 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kinjal Patel — Where science meets silence.</title>
-<style>
-  @font-face {
-    font-family: 'Centaur';
-    src: local('Centaur');
-    font-weight: normal;
-  }
-  body {
-    margin: 0;
-    font-family: 'Centaur', Georgia, serif;
-    color: #222;
-    line-height: 1.6;
-  }
-  .hero {
-    height: 100vh;
-    background: url('images/forest-bg.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 1rem;
-  }
-  .hero h1 {
-    background: rgba(255,255,255,0.8);
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    font-size: 2.5em;
-    margin: 0;
-  }
-  nav {
-    position: fixed;
-    top: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 2rem;
-  }
-  nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    background: rgba(0,0,0,0.4);
-    padding: 0.3rem 0.8rem;
-    border-radius: 4px;
-  }
-  nav a:hover {
-    background: rgba(0,0,0,0.6);
-  }
-  section {
-    padding: 4rem 2rem;
-    max-width: 720px;
-    margin: 0 auto;
-    background: #fdfcf9;
-  }
-  h2 {
-    font-size: 1.8em;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 0.3em;
-  }
-  a {
-    color: #444;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kinjal Patel | Official Website</title>
+  <style>
+    @font-face {
+      font-family: 'Centaur';
+      src: local('Centaur');
+    }
+    body {
+      margin: 0;
+      font-family: 'Centaur', Georgia, serif;
+      background: #fdfcf9;
+      color: #222;
+      line-height: 1.6;
+    }
+    .hero {
+      height: 100vh;
+      background: url('images/banner-kinjal.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .hero-text {
+      position: relative;
+      color: #fff;
+      z-index: 1;
+    }
+    .hero-text h1 {
+      font-size: 3em;
+      letter-spacing: 0.1em;
+      margin: 0;
+    }
+    .hero-text p {
+      font-size: 1.1em;
+      font-style: italic;
+      margin-top: 0.5em;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fdfcf9;
+    }
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+    p, li {
+      font-size: 1.05em;
+    }
+    a {
+      color: #444;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
-<nav>
-  <a href="#research">Research</a>
-</nav>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>KINJAL PATEL</h1>
+      <p>Official Website</p>
+    </div>
+  </div>
 
-<div class="hero">
-  <h1>“You are not too much. You’re just finally feeling.” — Kinjal</h1>
-</div>
-
-<section id="research">
-  <h2>Research Articles</h2>
-  <ul>
-    <li>
-      <strong>Transition Properties of Doubly Heavy Baryons</strong><br>
-      <em>International Journal of Theoretical Physics (IJTP, 2025)</em><br>
-      <a href="research/dhb-ijtp.pdf" target="_blank">Read Online</a>
-    </li>
-    <li>
-      <strong>Electromagnetic & Weak Decays of Singly Heavy Baryons</strong><br>
-      <em>European Physical Journal Plus (EPJP, 2025)</em><br>
-      <a href="research/shb-epjp.pdf" target="_blank">Read Online</a>
-    </li>
-  </ul>
-</section>
+  <section id="research">
+    <h2>Research Articles</h2>
+    <p>Peer-reviewed work exploring the structure, transitions, and decay properties of heavy baryons.</p>
+    <ul>
+      <li>
+        <strong>Transition Properties of Doubly Heavy Baryons</strong><br />
+        <em>International Journal of Theoretical Physics (IJTP, 2025)</em><br />
+        <a href="research/dhb-ijtp.pdf" target="_blank">Read Online</a>
+      </li>
+      <li>
+        <strong>Electromagnetic & Weak Decays of Singly Heavy Baryons</strong><br />
+        <em>European Physical Journal Plus (EPJP, 2025)</em><br />
+        <a href="research/shb-epjp.pdf" target="_blank">Read Online</a>
+      </li>
+    </ul>
+  </section>
 
 </body>
 </html>
