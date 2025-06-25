@@ -96,6 +96,31 @@
       </li>
     </ul>
   </section>
+<div class="mood-jar">
+  <h2>The Mood Jar</h2>
+  <p>Pick a color. Let your heart read what it needs.</p>
+  <div class="color-buttons">
+    <button style="background-color: #FFD700;" onclick="showProse('hope')">💛 I want to feel hopeful</button>
+    <button style="background-color: #87CEEB;" onclick="showProse('sad')">💙 I’m feeling heavy</button>
+    <button style="background-color: #90EE90;" onclick="showProse('heal')">💚 I need to heal</button>
+    <button style="background-color: #000000; color:white;" onclick="showProse('strong')">🖤 I need strength</button>
+    <!-- Add more as needed -->
+  </div>
+  <div id="prose-display" style="margin-top:20px; font-style: italic;"></div>
+</div>
+
+<script>
+  const moodProses = {
+    hope: "You don’t have to know the way. Just believe there is one.",
+    sad: "Even the ocean aches in silence. You’re allowed to feel.",
+    heal: "Some days, peace feels like a soft leaf — small, but enough.",
+    strong: "You survived again. Quietly, fiercely. That’s strength."
+  };
+
+  function showProse(mood) {
+    document.getElementById("prose-display").innerText = moodProses[mood];
+  }
+</script>
 
 </body>
 </html>
