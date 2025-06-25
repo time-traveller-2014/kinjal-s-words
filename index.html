@@ -5,105 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kinjal Patel | Official Website</title>
   <style>
-    @font-face {
-      font-family: 'Centaur';
-      src: local('Centaur');
-    }
+    @font-face { font-family: 'Centaur'; src: local('Centaur'); }
     body {
-      margin: 0;
-      font-family: 'Centaur', Georgia, serif;
-      background: #fdfcf9;
-      color: #222;
-      line-height: 1.6;
-      text-align: center;
+      margin: 0; font-family: 'Centaur', Georgia, serif;
+      background: #fdfcf9; color: #222; line-height: 1.6;
+      text-align: center; padding-bottom: 50px;
     }
     .hero {
-      height: 100vh;
-      background: url('images/me.jpg') center top/contain no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
+      height: 60vh;
+      background: url('images/me.jpg') center/contain no-repeat;
+      display: flex; align-items: center;
+      justify-content: center; position: relative;
     }
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.4);
+    .hero::after { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.4); }
+    .hero-text { position: relative; color: #fff; z-index: 1; }
+    .hero-text h1 { font-size: 3em; margin: 0; letter-spacing: 0.1em; }
+    .hero-text p { font-size: 1.1em; font-style: italic; }
+    section { padding: 2rem; max-width: 720px; margin: 0 auto; }
+    h2 { font-size: 2em; margin-bottom: 1rem; border-bottom: 1px solid #ccc; padding-bottom: 0.3em; }
+    .jar-section { background: #fefbf6; padding: 2rem; border-radius: 8px; }
+    button, a.shop-button {
+      background-color: #1f1f1f; color: white;
+      padding: 12px 24px; font-size: 1.1em;
+      border: none; border-radius: 30px;
+      text-decoration: none; display: inline-block;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-family: Georgia, serif;
+      margin-top: 20px;
     }
-    .hero-text {
-      position: relative;
-      color: #fff;
-      z-index: 1;
-    }
-    .hero-text h1 {
-      font-size: 3em;
-      letter-spacing: 0.1em;
-      margin: 0;
-    }
-    .hero-text p {
-      font-size: 1.1em;
-      font-style: italic;
-      margin-top: 0.5em;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 720px;
-      margin: 0 auto;
-      background: #fdfcf9;
-    }
-    h2 {
-      font-size: 1.8em;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.3em;
-    }
-    p, li {
-      font-size: 1.05em;
-    }
-    a {
-      color: #444;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .color-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
-    }
-    .color-buttons button {
-      padding: 12px 18px;
-      border: none;
-      border-radius: 10px;
-      font-size: 1em;
-      cursor: pointer;
-      color: white;
-      transition: transform 0.2s;
-    }
-    .color-buttons button:hover {
-      transform: scale(1.05);
-    }
-    #prose-display {
-      margin-top: 40px;
-      font-size: 1.4em;
-      font-weight: 500;
-      padding: 20px;
-      background: #fffdf9;
-      border-left: 5px solid #ccc;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+    button:hover, a.shop-button:hover { background-color: #333; }
+    #lonely-slip { margin-top: 20px; font-style: italic; font-size: 1.2em; }
   </style>
 </head>
 
 <body>
+
   <div class="hero">
     <div class="hero-text">
       <h1>KINJAL PATEL</h1>
@@ -113,56 +50,27 @@
 
   <section id="research">
     <h2>Research Articles</h2>
-    <p>Peer-reviewed work exploring the structure, transitions, and decay properties of heavy baryons.</p>
+    <p>Peer-reviewed work...</p>
     <ul>
-      <li>
-        <strong>Transition Properties of Doubly Heavy Baryons</strong><br />
-        <em>International Journal of Theoretical Physics (IJTP, 2025)</em><br />
-        <a href="research/dhb-ijtp.pdf" target="_blank">Read Online</a>
-      </li>
-      <li>
-        <strong>Electromagnetic & Weak Decays of Singly Heavy Baryons</strong><br />
-        <em>European Physical Journal Plus (EPJP, 2025)</em><br />
-        <a href="research/shb-epjp.pdf" target="_blank">Read Online</a>
-      </li>
+      <li><strong>Transition Properties…</strong> (<em>IJTP, 2025</em>) – <a href="research/dhb-ijtp.pdf">Read Online</a></li>
+      <li><strong>Electromagnetic & Weak Decays…</strong> (<em>EPJP, 2025</em>) – <a href="research/shb-epjp.pdf">Read Online</a></li>
     </ul>
   </section>
 
-  <section id="mood-jar">
+  <section id="mood-jar" class="jar-section">
     <h2>The Mood Jar</h2>
-    <p>Pick a color. Let your heart read what it needs.</p>
-
+    <p>Pick a feeling. Let the words find you.</p>
     <h3>💔 Loneliness Jar</h3>
-    <p>Pick a slip that understands how you feel.</p>
-
     <button onclick="showLonelySlip()">Pick a Random Slip</button>
+    <div id="lonely-slip"></div>
 
-    <div id="lonely-slip" style="margin-top:20px; font-style: italic; font-size: 1.2em;"></div>
-  </section>
-
-  <div style="margin-top: 50px; text-align: center;">
-    <a href="https://amzn.in/d/38fGir8" target="_blank" style="
-      background-color: #1f1f1f;
-      color: #fff;
-      padding: 14px 28px;
-      font-size: 1.1em;
-      font-family: 'Georgia', serif;
-      text-decoration: none;
-      border-radius: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      letter-spacing: 0.5px;
-      transition: all 0.3s ease;
-      display: inline-block;
-    "
-    onmouseover="this.style.backgroundColor='#333'"
-    onmouseout="this.style.backgroundColor='#1f1f1f'">
+    <a class="shop-button" href="https://amzn.in/d/38fGir8" target="_blank">
       🛍️ Buy My Book on Amazon
     </a>
-  </div>
-
-  <p style="margin-top: 15px; font-style: italic; font-size: 0.95em; color: #666;">
-    For the ones who write letters they’ll never send.
-  </p>
+    <p style="margin-top:10px; font-style:italic; color:#666;">
+      For the ones who write letters they’ll never send.
+    </p>
+  </section>
 
   <script>
     const lonelinessJar = [
@@ -172,11 +80,11 @@
       "Your silence does not make you invisible. I promise.",
       "You are not hard to love. You are hard to understand—softness always is."
     ];
-
     function showLonelySlip() {
       const slip = lonelinessJar[Math.floor(Math.random() * lonelinessJar.length)];
       document.getElementById("lonely-slip").innerText = slip;
     }
   </script>
+
 </body>
 </html>
