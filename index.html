@@ -15,11 +15,11 @@
       background: #fdfcf9;
       color: #222;
       line-height: 1.6;
+      text-align: center;
     }
     .hero {
       height: 100vh;
-     background: url('images/me.jpg') center top/contain no-repeat;
-
+      background: url('images/me.jpg') center top/contain no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -69,51 +69,7 @@
     a:hover {
       text-decoration: underline;
     }
-  </style>
-</head>
-<body>
 
-  <div class="hero">
-    <div class="hero-text">
-      <h1>KINJAL PATEL</h1>
-      <p>Official Website</p>
-    </div>
-  </div>
-
-  <section id="research">
-    <h2>Research Articles</h2>
-    <p>Peer-reviewed work exploring the structure, transitions, and decay properties of heavy baryons.</p>
-    <ul>
-      <li>
-        <strong>Transition Properties of Doubly Heavy Baryons</strong><br />
-        <em>International Journal of Theoretical Physics (IJTP, 2025)</em><br />
-        <a href="research/dhb-ijtp.pdf" target="_blank">Read Online</a>
-      </li>
-      <li>
-        <strong>Electromagnetic & Weak Decays of Singly Heavy Baryons</strong><br />
-        <em>European Physical Journal Plus (EPJP, 2025)</em><br />
-        <a href="research/shb-epjp.pdf" target="_blank">Read Online</a>
-      </li>
-    </ul>
-  </section>
-<meta charset="UTF-8">
-  <title>The Mood Jar</title>
-  <style>
-    body {
-      font-family: 'Georgia', serif;
-      background: #fefbf6;
-      color: #333;
-      text-align: center;
-      padding: 40px;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-style: italic;
-      color: #555;
-    }
     .color-buttons {
       display: flex;
       flex-wrap: wrap;
@@ -146,57 +102,81 @@
     }
   </style>
 </head>
+
 <body>
-  <h1>The Mood Jar</h1>
-  <p>Pick a color. Let your heart read what it needs.</p>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>KINJAL PATEL</h1>
+      <p>Official Website</p>
+    </div>
+  </div>
 
- <h2>💔 Loneliness Jar</h2>
-<p>Pick a slip that understands how you feel.</p>
+  <section id="research">
+    <h2>Research Articles</h2>
+    <p>Peer-reviewed work exploring the structure, transitions, and decay properties of heavy baryons.</p>
+    <ul>
+      <li>
+        <strong>Transition Properties of Doubly Heavy Baryons</strong><br />
+        <em>International Journal of Theoretical Physics (IJTP, 2025)</em><br />
+        <a href="research/dhb-ijtp.pdf" target="_blank">Read Online</a>
+      </li>
+      <li>
+        <strong>Electromagnetic & Weak Decays of Singly Heavy Baryons</strong><br />
+        <em>European Physical Journal Plus (EPJP, 2025)</em><br />
+        <a href="research/shb-epjp.pdf" target="_blank">Read Online</a>
+      </li>
+    </ul>
+  </section>
 
-<button onclick="showLonelySlip()">Pick a Random Slip</button>
+  <section id="mood-jar">
+    <h2>The Mood Jar</h2>
+    <p>Pick a color. Let your heart read what it needs.</p>
 
-<div id="lonely-slip" style="margin-top:20px; font-style: italic; font-size: 1.2em;"></div>
+    <h3>💔 Loneliness Jar</h3>
+    <p>Pick a slip that understands how you feel.</p>
 
-<script>
-  const lonelinessJar = [
-    "The worst part of loneliness is when you're not actually alone.",
-    "You are allowed to crave connection and still feel disconnected.",
-    "Maybe all you needed was someone to say, ‘I see you. Still.’",
-    "Your silence does not make you invisible. I promise.",
-    "You are not hard to love. You are hard to understand—softness always is."
-  ];
+    <button onclick="showLonelySlip()">Pick a Random Slip</button>
 
-  function showLonelySlip() {
-    const slip = lonelinessJar[Math.floor(Math.random() * lonelinessJar.length)];
-    document.getElementById("lonely-slip").innerText = slip;
-  }
-</script>
+    <div id="lonely-slip" style="margin-top:20px; font-style: italic; font-size: 1.2em;"></div>
+  </section>
 
-   
+  <div style="margin-top: 50px; text-align: center;">
+    <a href="https://amzn.in/d/38fGir8" target="_blank" style="
+      background-color: #1f1f1f;
+      color: #fff;
+      padding: 14px 28px;
+      font-size: 1.1em;
+      font-family: 'Georgia', serif;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    "
+    onmouseover="this.style.backgroundColor='#333'"
+    onmouseout="this.style.backgroundColor='#1f1f1f'">
+      🛍️ Buy My Book on Amazon
+    </a>
+  </div>
+
+  <p style="margin-top: 15px; font-style: italic; font-size: 0.95em; color: #666;">
+    For the ones who write letters they’ll never send.
+  </p>
+
+  <script>
+    const lonelinessJar = [
+      "The worst part of loneliness is when you're not actually alone.",
+      "You are allowed to crave connection and still feel disconnected.",
+      "Maybe all you needed was someone to say, ‘I see you. Still.’",
+      "Your silence does not make you invisible. I promise.",
+      "You are not hard to love. You are hard to understand—softness always is."
+    ];
+
+    function showLonelySlip() {
+      const slip = lonelinessJar[Math.floor(Math.random() * lonelinessJar.length)];
+      document.getElementById("lonely-slip").innerText = slip;
+    }
   </script>
-<div style="margin-top: 50px; text-align: center;">
-  <a href="https://amzn.in/d/38fGir8" target="_blank" style="
-    background-color: #1f1f1f;
-    color: #fff;
-    padding: 14px 28px;
-    font-size: 1.1em;
-    font-family: 'Georgia', serif;
-    text-decoration: none;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-    display: inline-block;
-  "
-  onmouseover="this.style.backgroundColor='#333'"
-  onmouseout="this.style.backgroundColor='#1f1f1f'">
-    🛍️ Buy My Book on Amazon
-  </a>
-</div>
-
-<p style="margin-top: 15px; font-style: italic; font-size: 0.95em; color: #666;">
-  For the ones who write letters they’ll never send.
-</p>
-
 </body>
 </html>
