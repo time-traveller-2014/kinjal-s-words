@@ -153,6 +153,23 @@
     </li>
   </ul>
 </section>
+<section id="drop-thought">
+  <h2>Drop a Thought</h2>
+  <p style="max-width: 600px; margin: 0 auto; font-style: italic;">
+    A question, a quiet ache, or a thought you need to let go of — I’ll hold it with care.
+  </p>
+
+  <button onclick="document.getElementById('thought-form').style.display='block'" style="margin: 1.5rem auto; padding: 12px 24px; border-radius: 30px; font-size: 1em; font-family: Georgia, serif; background-color: #1f1f1f; color: white; border: none; cursor: pointer;">
+    💬 Drop a Thought
+  </button>
+
+  <form id="thought-form" action="https://formsubmit.co/your@email.com" method="POST" style="display:none; max-width: 500px; margin: 2rem auto;">
+    <input type="text" name="name" placeholder="Your name (optional)" style="width: 100%; padding: 10px; margin-bottom: 10px; font-family: Georgia, serif;" />
+    <textarea name="message" rows="5" placeholder="What would you like to share?" required style="width: 100%; padding: 10px; font-family: Georgia, serif;"></textarea>
+    <button type="submit" class="shop-button" style="margin-top: 15px;">Send</button>
+    <input type="hidden" name="_captcha" value="false">
+  </form>
+</section>
 
   <a class="shop-button" href="https://amzn.in/d/38fGir8" target="_blank">🛍️ Buy My Book on Amazon</a>
 
