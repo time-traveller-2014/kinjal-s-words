@@ -1,148 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kinjal Patel | Official Website</title>
+  <meta charset="UTF-8">
+  <title>The Mood Jar</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Georgia', serif;
-      background: #fdfcf9;
-      color: #222;
+      background: #fefbf6;
+      color: #333;
       text-align: center;
+      padding: 40px;
     }
-    .hero {
-      height: 60vh;
-      background: url('images/me.jpg') center/contain no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.4);
-    }
-    .hero-text {
-      position: relative;
-      color: #fff;
-      z-index: 1;
-    }
-    .hero-text h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    .hero-text p {
+    p {
       font-style: italic;
+      color: #555;
     }
-    section {
-      padding: 2rem;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-    h2 {
-      font-size: 1.8em;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.3em;
-    }
-    ul {
-      list-style-type: disc;
-      text-align: left;
-      padding-left: 20px;
-      margin-top: 1em;
-    }
-    li {
-      margin-bottom: 1.5em;
-      font-size: 1.05em;
-      white-space: normal !important;
-      overflow: visible !important;
-      text-overflow: initial !important;
-    }
-    li a {
-      display: inline-block;
-      margin-top: 6px;
-      color: #1a0dab;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    li a:hover {
-      text-decoration: underline;
-    }
-    .shop-button, button {
-      background-color: #1f1f1f;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 30px;
-      font-size: 1.1em;
-      font-family: Georgia, serif;
+    .color-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
       margin-top: 30px;
-      text-decoration: none;
-      display: inline-block;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
     }
-    .shop-button:hover, button:hover {
-      background-color: #333;
+    .color-buttons button {
+      padding: 12px 18px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      color: white;
+      transition: transform 0.2s;
+    }
+    .color-buttons button:hover {
+      transform: scale(1.05);
+    }
+    #prose-display {
+      margin-top: 40px;
+      font-size: 1.4em;
+      font-weight: 500;
+      padding: 20px;
+      background: #fffdf9;
+      border-left: 5px solid #ccc;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
-
 <body>
+  <h1>The Mood Jar</h1>
+  <p>Pick a color. Let your heart read what it needs.</p>
 
-  <div class="hero">
-    <div class="hero-text">
-      <h1>KINJAL PATEL</h1>
-      <p>Official Website</p>
-    </div>
+  <div class="color-buttons">
+    <button style="background-color: #FFD700;" onclick="showProse('hope')">💛 Hope</button>
+    <button style="background-color: #87CEEB;" onclick="showProse('sad')">💙 Sadness</button>
+    <button style="background-color: #90EE90;" onclick="showProse('heal')">💚 Healing</button>
+    <button style="background-color: #000000;" onclick="showProse('strong')">🖤 Strength</button>
+    <button style="background-color: #FFA07A;" onclick="showProse('push')">🧡 Motivation</button>
+    <button style="background-color: #D8BFD8;" onclick="showProse('reflect')">💜 Reflection</button>
+    <button style="background-color: #f5f5f5; color:#444;" onclick="showProse('calm')">🤍 Calm</button>
   </div>
 
-  <section id="research">
-    <h2>Research Articles</h2>
-    <p>Peer-reviewed papers exploring structure, transitions, and decay properties of heavy baryons:</p>
-    <ul>
-      <li>
-        <strong>Transition Properties of Doubly Heavy Baryons: Radiative and Semileptonic Decays Using the Hypercentral Constituent Quark Model</strong><br>
-        <em>Published in International Journal of Theoretical Physics (IJTP, 2025)</em><br>
-        <a href="research/dhb-ijtp.pdf" target="_blank">📄 Read Full Article</a>
-      </li>
-      <li>
-        <strong>Electromagnetic and Weak Decay Properties of Singly Heavy Baryons in the Hypercentral Model</strong><br>
-        <em>Published in European Physical Journal Plus (EPJP, 2025)</em><br>
-        <a href="research/shb-epjp.pdf" target="_blank">📄 Read Full Article</a>
-      </li>
-    </ul>
-  </section>
-
-  <section id="mood-jar">
-    <h2>The Mood Jar</h2>
-    <p>Pick a color. Let your heart read what it needs.</p>
-    <h3>💔 Loneliness Jar</h3>
-    <button onclick="showLonelySlip()">Pick a Random Slip</button>
-    <div id="lonely-slip" style="margin-top: 20px; font-style: italic; font-size: 1.2em;"></div>
-
-    <a class="shop-button" href="https://amzn.in/d/38fGir8" target="_blank">🛍️ Buy My Book on Amazon</a>
-    <p style="margin-top: 15px; font-style: italic; font-size: 0.95em; color: #666;">
-      For the ones who write letters they’ll never send.
-    </p>
-  </section>
+  <div id="prose-display"></div>
 
   <script>
-    const lonelinessJar = [
-      "The worst part of loneliness is when you're not actually alone.",
-      "You are allowed to crave connection and still feel disconnected.",
-      "Maybe all you needed was someone to say, ‘I see you. Still.’",
-      "Your silence does not make you invisible. I promise.",
-      "You are not hard to love. You are hard to understand—softness always is."
-    ];
+    const moodProses = {
+      hope: "You don’t have to know the way. Just believe there is one.",
+      sad: "Even the ocean aches in silence. You’re allowed to feel.",
+      heal: "Some days, peace feels like a soft leaf — small, but enough.",
+      strong: "You survived again. Quietly, fiercely. That’s strength.",
+      push: "Burn gently, but burn anyway.",
+      reflect: "You were never hard to love — they just couldn’t see softly enough.",
+      calm: "Stillness is not emptiness. It’s arrival."
+    };
 
-    function showLonelySlip() {
-      const slip = lonelinessJar[Math.floor(Math.random() * lonelinessJar.length)];
-      document.getElementById("lonely-slip").innerText = slip;
+    function showProse(mood) {
+      document.getElementById("prose-display").innerText = moodProses[mood];
     }
   </script>
-
 </body>
 </html>
