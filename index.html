@@ -4,34 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kinjal Patel | Official Website</title>
+
+  <!-- Google Font Fallback -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
 
+  <!-- Optional: Your own Centaur font if uploaded -->
   <style>
+    @font-face {
+      font-family: 'Centaur';
+      src: url('fonts/centaur.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
-     @font-face {
- font-family: 'Cormorant Garamond', Georgia, serif;
-  src: url('fonts/centaur.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-body {
-  margin: 0;
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  background: #fdfcf9;
-  color: #222;
-  line-height: 1.7;
-}
-
-}
-
+      font-family: 'Centaur', 'Cormorant Garamond', Georgia, serif;
       background: #fdfcf9;
       color: #222;
+      line-height: 1.7;
       text-align: center;
     }
+
     .profile-header {
       padding: 4rem 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
     .profile-header img {
       width: 180px;
       height: 180px;
@@ -40,16 +41,19 @@ body {
       margin-bottom: 1rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+
     .profile-header h1 {
       font-size: 2.2em;
       margin: 0.2em 0;
     }
+
     .profile-header p {
       font-style: italic;
       font-size: 1em;
       margin-top: 0.2em;
       color: #555;
     }
+
     .poetic-line {
       font-style: italic;
       font-size: 1.2em;
@@ -58,63 +62,64 @@ body {
       margin: 2rem auto;
       padding: 0 1rem;
     }
+
     section {
-  padding: 4rem 1rem 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-  padding: 2rem;
+      padding: 4rem 1rem 2rem;
       max-width: 720px;
       margin: 0 auto;
     }
+
     h2 {
       font-size: 1.8em;
       border-bottom: 1px solid #ccc;
       padding-bottom: 0.3em;
     }
+
     ul {
       list-style-type: disc;
       text-align: left;
       padding-left: 20px;
       margin-top: 1em;
     }
+
     li {
       margin-bottom: 2.5em;
       font-size: 1.05em;
     }
+
     .read-button {
       background-color: #1f1f1f;
       color: white;
       padding: 10px 22px;
       border-radius: 30px;
       font-size: 1em;
-      font-family: Georgia, serif;
+      font-family: 'Cormorant Garamond', Georgia, serif;
       margin-top: 10px;
       text-decoration: none;
       display: inline-block;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: background-color 0.3s ease;
     }
+
     .read-button:hover {
       background-color: #333;
     }
-    .shop-button, button {
+
+    .shop-button {
       background-color: #1f1f1f;
       color: white;
       padding: 14px 28px;
       border-radius: 30px;
       font-size: 1.1em;
-      font-family: Georgia, serif;
+      font-family: 'Cormorant Garamond', Georgia, serif;
       margin-top: 30px;
       text-decoration: none;
       display: inline-block;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: all 0.3s ease;
     }
-    .shop-button:hover, button:hover {
+
+    .shop-button:hover {
       background-color: #333;
     }
   </style>
@@ -149,14 +154,7 @@ body {
     </ul>
   </section>
 
- 
-
-    <a class="shop-button" href="https://amzn.in/d/38fGir8" target="_blank">🛍️ Buy My Book on Amazon</a>
-  
-     
-  </section>
-
-
+  <a class="shop-button" href="https://amzn.in/d/38fGir8" target="_blank">🛍️ Buy My Book on Amazon</a>
 
 </body>
 </html>
