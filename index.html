@@ -191,6 +191,118 @@
   </section>
 
   <a class="shop-button" href="https://amzn.in/d/38fGir8" target="_blank">🛍️ Buy My Book on Amazon</a>
+<section id="reading-list" style="text-align: center; margin-top: 4rem;">
+  <h2>My 2024 Reading</h2>
+  <p style="font-style: italic; color: #666;">Books I’ve read, loved, or left half-finished.</p>
+
+  <button onclick="toggleReadingList()" id="toggleButton" style="margin: 1.5rem auto; padding: 12px 28px; border-radius: 30px; font-size: 1.1em; font-family: Georgia, serif; background-color: #1f1f1f; color: white; border: none; cursor: pointer;">
+    📚 View Reading List
+  </button>
+
+  <div id="reading-list-content" style="display: none; margin-top: 2rem;">
+    <ul style="text-align: left; max-width: 720px; margin: 0 auto; font-size: 1.1em; line-height: 1.75;">
+      <li>The Hidden Hindu Trilogy</li>
+      <li>The Art of Being Alone</li>
+      <li>Skill People</li>
+      <li>Notes on Heartbreak</li>
+      <li>The Last Act of Love</li>
+      <li>Eleanor Oliphant is Completely Fine</li>
+      <li>The Book of Tomorrow</li>
+      <li>One Indian Girl</li>
+      <li>The Girl in the Spider’s Web</li>
+      <li>The Girl Who Takes an Eye for an Eye</li>
+      <li>The Girl Who Lived Twice</li>
+      <li>Bhumika</li>
+      <li>Atomic Habits</li>
+      <li>The Secret</li>
+      <li>Ikigai</li>
+      <li>Attitude is Everything</li>
+      <li>Think Like a Monk</li>
+      <li>The Girl Who Played with Fire</li>
+      <li>The Compound Effect</li>
+      <li>As a Man Thinketh</li>
+      <li>Eat That Frog</li>
+      <li>Make Your Bed</li>
+      <li>Man’s Search for Meaning</li>
+      <li>The Key to Happiness</li>
+      <li>The Girl with the Dragon Tattoo</li>
+      <li>The Girl Who Kicked the Hornet’s Nest</li>
+      <li>The Good Girl’s Guide to Being a D*ck</li>
+      <li>Milk and Honey</li>
+      <li>Love, Hope and Magic</li>
+      <li>Do It Today</li>
+      <li>Good Vibes, Good Life</li>
+      <li>Clueless at 30</li>
+      <li>Do Epic Shit</li>
+      <li>The Kite Runner</li>
+      <li>How to Be the Best at Everything</li>
+      <li>Don’t Believe Everything You Think</li>
+      <li>The Second Brain</li>
+      <li>Adulting</li>
+      <li>Coffee with Excess Sugar</li>
+      <li>Where the Crawdads Sing</li>
+      <li>Silence</li>
+      <li>The Fault in Our Stars</li>
+      <li>The Girl Who Knew Too Much</li>
+      <li>Her Last Wish</li>
+      <li>Everyone Has a Story</li>
+      <li>Something I Never Told You</li>
+      <li>My Dark Vanessa</li>
+      <li>Pollyanna (Gujarati)</li>
+      <li>Dark Matter</li>
+      <li>Few Things Left Unsaid</li>
+      <li>To Sleep in a Sea of Stars</li>
+      <li>How Not to Die Alone</li>
+      <li>Buy Yourself the F*cking Lilies</li>
+      <li>The Alchemist</li>
+      <li>Living Beyond Your Feelings</li>
+      <li>Death: An Inside Story</li>
+      <li>F*ck, I’m in My Twenties</li>
+      <li>The Defining Decade</li>
+      <li>Stephen Hawking: Black Holes</li>
+      <li>Who Moved My Cheese</li>
+      <li>Life Is Short (So Is This Book)</li>
+      <li>The Silent Patient</li>
+      <li>The Girl Who Drank the Moon</li>
+      <li>The End of Loneliness</li>
+      <li>Birthday Girl</li>
+      <li>Before the Coffee Gets Cold</li>
+      <li>Tales from the Cafe</li>
+      <li>The Girl in the Glass Case</li>
+      <li>Before Your Memory Fades</li>
+      <li>Miracle Morning</li>
+      <li>The Leading Brain</li>
+      <li>Think and Grow Rich</li>
+      <li>How to Stop Worrying and Start Living</li>
+      <li>Something I’m Waiting to Tell You</li>
+      <li>Ghachar Ghochar</li>
+      <li>To Water Her Garden</li>
+      <li>The Strength in Our Scars</li>
+      <li>Bring Me Back</li>
+      <li>Reflections of a Man</li>
+      <li>If Cats Disappeared from the World</li>
+      <li>You²</li>
+      <li>I Fell in Love with Hope</li>
+      <li>Sweet Bean Paste</li>
+      <li>Convenience Store Woman</li>
+      <li>Salt Water</li>
+    </ul>
+  </div>
+</section>
+
+<script>
+  function toggleReadingList() {
+    const content = document.getElementById("reading-list-content");
+    const button = document.getElementById("toggleButton");
+    if (content.style.display === "none") {
+      content.style.display = "block";
+      button.innerText = "📚 Hide Reading List";
+    } else {
+      content.style.display = "none";
+      button.innerText = "📚 View Reading List";
+    }
+  }
+</script>
 
 </body>
 </html>
