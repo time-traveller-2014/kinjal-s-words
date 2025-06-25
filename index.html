@@ -110,4 +110,45 @@
     <p>Peer-reviewed papers exploring structure, transitions, and decay properties of heavy baryons:</p>
     <ul>
       <li>
-        <strong>Transition Properties of Doubly Heavy Baryons:
+        <strong>Transition Properties of Doubly Heavy Baryons: Radiative and Semileptonic Decays Using the Hypercentral Constituent Quark Model</strong><br>
+        <em>Published in International Journal of Theoretical Physics (IJTP, 2025)</em><br>
+        <a class="read-button" href="research/dhb-ijtp.pdf" target="_blank">Read Full Article</a>
+      </li>
+      <li>
+        <strong>Electromagnetic and Weak Decay Properties of Singly Heavy Baryons in the Hypercentral Model</strong><br>
+        <em>Published in European Physical Journal Plus (EPJP, 2025)</em><br>
+        <a class="read-button" href="research/shb-epjp.pdf" target="_blank">Read Full Article</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="mood-jar">
+    <h2>The Mood Jar</h2>
+    <p>Pick a color. Let your heart read what it needs.</p>
+    <h3>💔 Loneliness Jar</h3>
+    <button onclick="showLonelySlip()">Pick a Random Slip</button>
+    <div id="lonely-slip" style="margin-top: 20px; font-style: italic; font-size: 1.2em;"></div>
+
+    <a class="shop-button" href="https://amzn.in/d/38fGir8" target="_blank">🛍️ Buy My Book on Amazon</a>
+    <p style="margin-top: 15px; font-style: italic; font-size: 0.95em; color: #666;">
+      For the ones who write letters they’ll never send.
+    </p>
+  </section>
+
+  <script>
+    const lonelinessJar = [
+      "The worst part of loneliness is when you're not actually alone.",
+      "You are allowed to crave connection and still feel disconnected.",
+      "Maybe all you needed was someone to say, ‘I see you. Still.’",
+      "Your silence does not make you invisible. I promise.",
+      "You are not hard to love. You are hard to understand—softness always is."
+    ];
+
+    function showLonelySlip() {
+      const slip = lonelinessJar[Math.floor(Math.random() * lonelinessJar.length)];
+      document.getElementById("lonely-slip").innerText = slip;
+    }
+  </script>
+
+</body>
+</html>
