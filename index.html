@@ -150,7 +150,60 @@
     <h1>KINJAL PATEL</h1>
     <p>Researcher. Writer. Quietly documenting what lives between particles and people.</p>
   </div>
+  <button onclick="toggleReadingList()" id="toggleButton" style="margin: 1.5rem auto; padding: 12px 28px; border-radius: 30px; font-size: 1.1em; font-family: Georgia, serif; background-color: #1f1f1f; color: white; border: none; cursor: pointer;">
+    📚 View Reading List
+  </button>
 
+  <div id="reading-list-content" style="display: none; margin-top: 2rem;">
+    <ul style="text-align: left; max-width: 720px; margin: 0 auto; font-size: 1.1em; line-height: 1.75;">
+     <div style="display: flex; flex-direction: column; gap: 1.5rem; text-align: left; max-width: 720px; margin: 0 auto; font-size: 1.1em; line-height: 1.7;">
+  <div>1. The Hidden Hindu Trilogy  2. The Art of Being Alone  3. Skill People</div>
+  <div>4. Notes on Heartbreak  5. The Last Act of Love  6. Eleanor Oliphant is Completely Fine</div>
+  <div>7. The Book of Tomorrow  8. One Indian Girl  9. The Girl in the Spider’s Web</div>
+  <div>10. The Girl Who Takes an Eye for an Eye  11. The Girl Who Lived Twice  12. Bhumika</div>
+  <div>13. Atomic Habits  14. The Secret  15. Ikigai</div>
+  <div>16. Attitude is Everything  17. Think Like a Monk  18. The Girl Who Played with Fire</div>
+  <div>19. The Compound Effect  20. As a Man Thinketh  21. Eat That Frog</div>
+  <div>22. Make Your Bed  23. Man’s Search for Meaning  24. The Key to Happiness</div>
+  <div>25. The Girl with the Dragon Tattoo  26. The Girl Who Kicked the Hornet’s Nest  27. The Good Girl’s Guide to Being a D*ck</div>
+  <div>28. Milk and Honey  29. Love, Hope and Magic  30. Do It Today</div>
+  <div>31. Good Vibes, Good Life  32. Clueless at 30  33. Do Epic Shit</div>
+  <div>34. The Kite Runner  35. How to Be the Best at Everything  36. Don’t Believe Everything You Think</div>
+  <div>37. The Second Brain  38. Adulting  39. Coffee with Excess Sugar</div>
+  <div>40. Where the Crawdads Sing  41. Silence  42. The Fault in Our Stars</div>
+  <div>43. The Girl Who Knew Too Much  44. Her Last Wish  45. Everyone Has a Story</div>
+  <div>46. Something I Never Told You  47. My Dark Vanessa  48. Pollyanna (Gujarati)</div>
+  <div>49. Dark Matter  50. Few Things Left Unsaid  51. To Sleep in a Sea of Stars</div>
+  <div>52. How Not to Die Alone  53. Buy Yourself the F*cking Lilies  54. The Alchemist</div>
+  <div>55. Living Beyond Your Feelings  56. Death: An Inside Story  57. F*ck, I’m in My Twenties</div>
+  <div>58. The Defining Decade  59. Stephen Hawking: Black Holes  60. Who Moved My Cheese</div>
+  <div>61. Life Is Short (So Is This Book)  62. The Silent Patient  63. The Girl Who Drank the Moon</div>
+  <div>64. The End of Loneliness  65. Birthday Girl  66. Before the Coffee Gets Cold</div>
+  <div>67. Tales from the Cafe  68. The Girl in the Glass Case  69. Before Your Memory Fades</div>
+  <div>70. Miracle Morning  71. The Leading Brain  72. Think and Grow Rich</div>
+  <div>73. How to Stop Worrying and Start Living  74. Something I’m Waiting to Tell You  75. Ghachar Ghochar</div>
+  <div>76. To Water Her Garden  77. The Strength in Our Scars  78. Bring Me Back</div>
+  <div>79. Reflections of a Man  80. If Cats Disappeared from the World  81. You²</div>
+  <div>82. I Fell in Love with Hope  83. Sweet Bean Paste  84. Convenience Store Woman</div>
+  <div>85. Salt Water</div>
+</div>
+    </ul>
+  </div>
+</section>
+
+<script>
+  function toggleReadingList() {
+    const content = document.getElementById("reading-list-content");
+    const button = document.getElementById("toggleButton");
+    if (content.style.display === "none") {
+      content.style.display = "block";
+      button.innerText = "📚 Hide Reading List";
+    } else {
+      content.style.display = "none";
+      button.innerText = "📚 View Reading List";
+    }
+  }
+</script>
   <div class="poetic-line">
     “I study what doesn’t exist. And I write what can't be said.” — Kinjal
   </div>
@@ -195,114 +248,7 @@
   <h2>My 2024 Reading</h2>
   <p style="font-style: italic; color: #666;">Books I’ve read, loved, or left half-finished.</p>
 
-  <button onclick="toggleReadingList()" id="toggleButton" style="margin: 1.5rem auto; padding: 12px 28px; border-radius: 30px; font-size: 1.1em; font-family: Georgia, serif; background-color: #1f1f1f; color: white; border: none; cursor: pointer;">
-    📚 View Reading List
-  </button>
 
-  <div id="reading-list-content" style="display: none; margin-top: 2rem;">
-    <ul style="text-align: left; max-width: 720px; margin: 0 auto; font-size: 1.1em; line-height: 1.75;">
-      <li>The Hidden Hindu Trilogy</li>
-      <li>The Art of Being Alone</li>
-      <li>Skill People</li>
-      <li>Notes on Heartbreak</li>
-      <li>The Last Act of Love</li>
-      <li>Eleanor Oliphant is Completely Fine</li>
-      <li>The Book of Tomorrow</li>
-      <li>One Indian Girl</li>
-      <li>The Girl in the Spider’s Web</li>
-      <li>The Girl Who Takes an Eye for an Eye</li>
-      <li>The Girl Who Lived Twice</li>
-      <li>Bhumika</li>
-      <li>Atomic Habits</li>
-      <li>The Secret</li>
-      <li>Ikigai</li>
-      <li>Attitude is Everything</li>
-      <li>Think Like a Monk</li>
-      <li>The Girl Who Played with Fire</li>
-      <li>The Compound Effect</li>
-      <li>As a Man Thinketh</li>
-      <li>Eat That Frog</li>
-      <li>Make Your Bed</li>
-      <li>Man’s Search for Meaning</li>
-      <li>The Key to Happiness</li>
-      <li>The Girl with the Dragon Tattoo</li>
-      <li>The Girl Who Kicked the Hornet’s Nest</li>
-      <li>The Good Girl’s Guide to Being a D*ck</li>
-      <li>Milk and Honey</li>
-      <li>Love, Hope and Magic</li>
-      <li>Do It Today</li>
-      <li>Good Vibes, Good Life</li>
-      <li>Clueless at 30</li>
-      <li>Do Epic Shit</li>
-      <li>The Kite Runner</li>
-      <li>How to Be the Best at Everything</li>
-      <li>Don’t Believe Everything You Think</li>
-      <li>The Second Brain</li>
-      <li>Adulting</li>
-      <li>Coffee with Excess Sugar</li>
-      <li>Where the Crawdads Sing</li>
-      <li>Silence</li>
-      <li>The Fault in Our Stars</li>
-      <li>The Girl Who Knew Too Much</li>
-      <li>Her Last Wish</li>
-      <li>Everyone Has a Story</li>
-      <li>Something I Never Told You</li>
-      <li>My Dark Vanessa</li>
-      <li>Pollyanna (Gujarati)</li>
-      <li>Dark Matter</li>
-      <li>Few Things Left Unsaid</li>
-      <li>To Sleep in a Sea of Stars</li>
-      <li>How Not to Die Alone</li>
-      <li>Buy Yourself the F*cking Lilies</li>
-      <li>The Alchemist</li>
-      <li>Living Beyond Your Feelings</li>
-      <li>Death: An Inside Story</li>
-      <li>F*ck, I’m in My Twenties</li>
-      <li>The Defining Decade</li>
-      <li>Stephen Hawking: Black Holes</li>
-      <li>Who Moved My Cheese</li>
-      <li>Life Is Short (So Is This Book)</li>
-      <li>The Silent Patient</li>
-      <li>The Girl Who Drank the Moon</li>
-      <li>The End of Loneliness</li>
-      <li>Birthday Girl</li>
-      <li>Before the Coffee Gets Cold</li>
-      <li>Tales from the Cafe</li>
-      <li>The Girl in the Glass Case</li>
-      <li>Before Your Memory Fades</li>
-      <li>Miracle Morning</li>
-      <li>The Leading Brain</li>
-      <li>Think and Grow Rich</li>
-      <li>How to Stop Worrying and Start Living</li>
-      <li>Something I’m Waiting to Tell You</li>
-      <li>Ghachar Ghochar</li>
-      <li>To Water Her Garden</li>
-      <li>The Strength in Our Scars</li>
-      <li>Bring Me Back</li>
-      <li>Reflections of a Man</li>
-      <li>If Cats Disappeared from the World</li>
-      <li>You²</li>
-      <li>I Fell in Love with Hope</li>
-      <li>Sweet Bean Paste</li>
-      <li>Convenience Store Woman</li>
-      <li>Salt Water</li>
-    </ul>
-  </div>
-</section>
-
-<script>
-  function toggleReadingList() {
-    const content = document.getElementById("reading-list-content");
-    const button = document.getElementById("toggleButton");
-    if (content.style.display === "none") {
-      content.style.display = "block";
-      button.innerText = "📚 Hide Reading List";
-    } else {
-      content.style.display = "none";
-      button.innerText = "📚 View Reading List";
-    }
-  }
-</script>
 
 </body>
 </html>
