@@ -12,31 +12,34 @@
       color: #222;
       text-align: center;
     }
-    .hero {
-      height: 60vh;
-      background: url('images/me.jpg') center/contain no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
+    .profile-header {
+      padding: 4rem 1rem 2rem;
     }
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.4);
+    .profile-header img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-    .hero-text {
-      position: relative;
-      color: #fff;
-      z-index: 1;
+    .profile-header h1 {
+      font-size: 2.2em;
+      margin: 0.2em 0;
     }
-    .hero-text h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    .hero-text p {
+    .profile-header p {
       font-style: italic;
+      font-size: 1em;
+      margin-top: 0.2em;
+      color: #555;
+    }
+    .poetic-line {
+      font-style: italic;
+      font-size: 1.2em;
+      color: #555;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
     section {
       padding: 2rem;
@@ -57,9 +60,6 @@
     li {
       margin-bottom: 2.5em;
       font-size: 1.05em;
-      white-space: normal !important;
-      overflow: visible !important;
-      text-overflow: initial !important;
     }
     .read-button {
       background-color: #1f1f1f;
@@ -98,20 +98,16 @@
 
 <body>
 
-  <div class="hero">
-    <div class="hero-text">
-      <h1>KINJAL PATEL</h1>
-      <p>Official Website</p>
-    </div>
+  <div class="profile-header">
+    <img src="images/me.jpg" alt="Kinjal Patel" />
+    <h1>KINJAL PATEL</h1>
+    <p>Researcher. Writer. Quietly documenting what lives between particles and people.</p>
   </div>
-<div class="poetic-line">“I study what doesn’t exist. And I write for what was never said.” — Kinjal</div>
 
-  <div class="intro">
-    <div class="intro-left">
-      $1<br><em>Researcher. Writer. Quietly documenting what lives between particles and people.</em></p>
-    </div>
+  <div class="poetic-line">
+    “I study what doesn’t exist. And I write for what was never said.” — Kinjal
   </div>
-  
+
   <section id="research">
     <h2>Research Articles</h2>
     <p>Peer-reviewed papers exploring structure, transitions, and decay properties of heavy baryons:</p>
