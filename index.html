@@ -96,31 +96,87 @@
       </li>
     </ul>
   </section>
-<div class="mood-jar">
-  <h2>The Mood Jar</h2>
+<meta charset="UTF-8">
+  <title>The Mood Jar</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #fefbf6;
+      color: #333;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-style: italic;
+      color: #555;
+    }
+    .color-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .color-buttons button {
+      padding: 12px 18px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      color: white;
+      transition: transform 0.2s;
+    }
+    .color-buttons button:hover {
+      transform: scale(1.05);
+    }
+    #prose-display {
+      margin-top: 40px;
+      font-size: 1.4em;
+      font-weight: 500;
+      padding: 20px;
+      background: #fffdf9;
+      border-left: 5px solid #ccc;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>The Mood Jar</h1>
   <p>Pick a color. Let your heart read what it needs.</p>
+
   <div class="color-buttons">
-    <button style="background-color: #FFD700;" onclick="showProse('hope')">💛 I want to feel hopeful</button>
-    <button style="background-color: #87CEEB;" onclick="showProse('sad')">💙 I’m feeling heavy</button>
-    <button style="background-color: #90EE90;" onclick="showProse('heal')">💚 I need to heal</button>
-    <button style="background-color: #000000; color:white;" onclick="showProse('strong')">🖤 I need strength</button>
-    <!-- Add more as needed -->
+    <button style="background-color: #FFD700;" onclick="showProse('hope')">💛 Hope</button>
+    <button style="background-color: #87CEEB;" onclick="showProse('sad')">💙 Sadness</button>
+    <button style="background-color: #90EE90;" onclick="showProse('heal')">💚 Healing</button>
+    <button style="background-color: #000000;" onclick="showProse('strong')">🖤 Strength</button>
+    <button style="background-color: #FFA07A;" onclick="showProse('push')">🧡 Motivation</button>
+    <button style="background-color: #D8BFD8;" onclick="showProse('reflect')">💜 Reflection</button>
+    <button style="background-color: #f5f5f5; color:#444;" onclick="showProse('calm')">🤍 Calm</button>
   </div>
-  <div id="prose-display" style="margin-top:20px; font-style: italic;"></div>
-</div>
 
-<script>
-  const moodProses = {
-    hope: "You don’t have to know the way. Just believe there is one.",
-    sad: "Even the ocean aches in silence. You’re allowed to feel.",
-    heal: "Some days, peace feels like a soft leaf — small, but enough.",
-    strong: "You survived again. Quietly, fiercely. That’s strength."
-  };
+  <div id="prose-display"></div>
 
-  function showProse(mood) {
-    document.getElementById("prose-display").innerText = moodProses[mood];
-  }
-</script>
+  <script>
+    const moodProses = {
+      hope: "You don’t have to know the way. Just believe there is one.",
+      sad: "Even the ocean aches in silence. You’re allowed to feel.",
+      heal: "Some days, peace feels like a soft leaf — small, but enough.",
+      strong: "You survived again. Quietly, fiercely. That’s strength.",
+      push: "Burn gently, but burn anyway.",
+      reflect: "You were never hard to love — they just couldn’t see softly enough.",
+      calm: "Stillness is not emptiness. It’s arrival."
+    };
+
+    function showProse(mood) {
+      document.getElementById("prose-display").innerText = moodProses[mood];
+    }
+  </script>
 
 </body>
 </html>
