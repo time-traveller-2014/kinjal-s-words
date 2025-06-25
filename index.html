@@ -8,7 +8,6 @@
   <!-- Google Font Fallback -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Optional: Your own Centaur font if uploaded -->
   <style>
     @font-face {
       font-family: 'Centaur';
@@ -20,9 +19,10 @@
     body {
       margin: 0;
       font-family: 'Centaur', 'Cormorant Garamond', Georgia, serif;
+      font-size: 19px;
+      line-height: 1.85;
       background: #fdfcf9;
       color: #222;
-      line-height: 1.7;
       text-align: center;
     }
 
@@ -43,23 +43,23 @@
     }
 
     .profile-header h1 {
-      font-size: 2.2em;
+      font-size: 2.4em;
       margin: 0.2em 0;
     }
 
     .profile-header p {
       font-style: italic;
-      font-size: 1em;
-      margin-top: 0.2em;
+      font-size: 1.1em;
+      margin-top: 0.3em;
       color: #555;
     }
 
     .poetic-line {
       font-style: italic;
-      font-size: 1.2em;
+      font-size: 1.3em;
       color: #555;
-      max-width: 600px;
-      margin: 2rem auto;
+      max-width: 640px;
+      margin: 2.5rem auto;
       padding: 0 1rem;
     }
 
@@ -69,10 +69,17 @@
       margin: 0 auto;
     }
 
+    section p,
+    section li {
+      font-size: 1.15em;
+      line-height: 1.9;
+    }
+
     h2 {
-      font-size: 1.8em;
+      font-size: 2em;
       border-bottom: 1px solid #ccc;
       padding-bottom: 0.3em;
+      margin-bottom: 1.5rem;
     }
 
     ul {
@@ -84,15 +91,14 @@
 
     li {
       margin-bottom: 2.5em;
-      font-size: 1.05em;
     }
 
     .read-button {
       background-color: #1f1f1f;
       color: white;
-      padding: 10px 22px;
+      padding: 12px 26px;
       border-radius: 30px;
-      font-size: 1em;
+      font-size: 1.1em;
       font-family: 'Cormorant Garamond', Georgia, serif;
       margin-top: 10px;
       text-decoration: none;
@@ -110,7 +116,7 @@
       color: white;
       padding: 14px 28px;
       border-radius: 30px;
-      font-size: 1.1em;
+      font-size: 1.15em;
       font-family: 'Cormorant Garamond', Georgia, serif;
       margin-top: 30px;
       text-decoration: none;
@@ -121,6 +127,18 @@
 
     .shop-button:hover {
       background-color: #333;
+    }
+
+    @media screen and (max-width: 600px) {
+      body {
+        font-size: 17px;
+      }
+      .poetic-line {
+        font-size: 1.2em;
+      }
+      .profile-header h1 {
+        font-size: 2em;
+      }
     }
   </style>
 </head>
@@ -137,39 +155,40 @@
     “I study what doesn’t exist. And I write what can't be said.” — Kinjal
   </div>
 
- <section id="research">
-  <h2>Research Articles</h2>
-  <p>Peer-reviewed papers exploring structure, transitions, and decay properties of heavy baryons:</p>
-  <ul>
-    <li>
-      <strong>Transition Properties of Doubly Heavy Baryons</strong><br>
-      <em>Published in International Journal of Theoretical Physics (IJTP, 2025)</em><br>
-      <a class="read-button" href="https://doi.org/10.1007/s10773-025-05997-5" target="_blank">Read Full Article</a>
-    </li>
-    <li>
-      <strong>Electromagnetic and Weak Decay Properties of Singly Heavy Baryons</strong><br>
-      <em>Published in European Physical Journal Plus (EPJP, 2025)</em><br>
-      <a class="read-button" href="https://doi.org/10.1140/epjp/s13360-025-06398-7" target="_blank">Read Full Article</a>
-    </li>
-  </ul>
-</section>
-<section id="drop-thought">
-  <h2>Drop a Thought</h2>
-  <p style="max-width: 600px; margin: 0 auto; font-style: italic;">
-    A question, a quiet ache, or a thought you need to let go of — I’ll hold it with care.
-  </p>
+  <section id="research">
+    <h2>Research Articles</h2>
+    <p>Peer-reviewed papers exploring structure, transitions, and decay properties of heavy baryons:</p>
+    <ul>
+      <li>
+        <strong>Transition Properties of Doubly Heavy Baryons</strong><br>
+        <em>Published in International Journal of Theoretical Physics (IJTP, 2025)</em><br>
+        <a class="read-button" href="https://doi.org/10.1007/s10773-025-05997-5" target="_blank">Read Full Article</a>
+      </li>
+      <li>
+        <strong>Electromagnetic and Weak Decay Properties of Singly Heavy Baryons</strong><br>
+        <em>Published in European Physical Journal Plus (EPJP, 2025)</em><br>
+        <a class="read-button" href="https://doi.org/10.1140/epjp/s13360-025-06398-7" target="_blank">Read Full Article</a>
+      </li>
+    </ul>
+  </section>
 
-  <button onclick="document.getElementById('thought-form').style.display='block'" style="margin: 1.5rem auto; padding: 12px 24px; border-radius: 30px; font-size: 1em; font-family: Georgia, serif; background-color: #1f1f1f; color: white; border: none; cursor: pointer;">
-    💬 Drop a Thought
-  </button>
+  <section id="drop-thought">
+    <h2>Drop a Thought</h2>
+    <p style="max-width: 600px; margin: 0 auto; font-style: italic;">
+      A question, a quiet ache, or a thought you need to let go of — I’ll hold it with care.
+    </p>
 
-  <form id="thought-form" action="https://formsubmit.co/your@email.com" method="POST" style="display:none; max-width: 500px; margin: 2rem auto;">
-    <input type="text" name="name" placeholder="Your name (optional)" style="width: 100%; padding: 10px; margin-bottom: 10px; font-family: Georgia, serif;" />
-    <textarea name="message" rows="5" placeholder="What would you like to share?" required style="width: 100%; padding: 10px; font-family: Georgia, serif;"></textarea>
-    <button type="submit" class="shop-button" style="margin-top: 15px;">Send</button>
-    <input type="hidden" name="_captcha" value="false">
-  </form>
-</section>
+    <button onclick="document.getElementById('thought-form').style.display='block'" style="margin: 1.5rem auto; padding: 12px 24px; border-radius: 30px; font-size: 1.1em; font-family: Georgia, serif; background-color: #1f1f1f; color: white; border: none; cursor: pointer;">
+      💬 Drop a Thought
+    </button>
+
+    <form id="thought-form" action="https://formsubmit.co/your@email.com" method="POST" style="display:none; max-width: 500px; margin: 2rem auto;">
+      <input type="text" name="name" placeholder="Your name (optional)" style="width: 100%; padding: 10px; margin-bottom: 10px; font-family: Georgia, serif;" />
+      <textarea name="message" rows="5" placeholder="What would you like to share?" required style="width: 100%; padding: 10px; font-family: Georgia, serif;"></textarea>
+      <button type="submit" class="shop-button" style="margin-top: 15px;">Send</button>
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </section>
 
   <a class="shop-button" href="https://amzn.in/d/38fGir8" target="_blank">🛍️ Buy My Book on Amazon</a>
 
