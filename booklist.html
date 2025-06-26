@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kinjal's Reading List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Centaur';
+      src: url('fonts/centaur.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Centaur', 'Cormorant Garamond', Georgia, serif;
+      background: linear-gradient(to bottom right, #fdfcf9, #f7f2ea);
+      color: #222;
+      padding: 3rem 1rem;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 3rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.6rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      counter-reset: book;
+    }
+
+    .grid li {
+      text-align: left;
+      font-size: 1.1em;
+      line-height: 1.6;
+      counter-increment: book;
+      padding: 0.5rem 0.5rem;
+    }
+
+    .grid li::before {
+      content: counter(book) ". ";
+      font-weight: bold;
+      color: #444;
+    }
+
+    a.back-link {
+      display: inline-block;
+      margin-top: 3rem;
+      text-decoration: none;
+      font-size: 1em;
+      color: #333;
+      border: 1px solid #aaa;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    a.back-link:hover {
+      background-color: #222;
+      color: white;
+      border-color: #222;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My 2024 Reading</h1>
+  <p>Books I’ve read, loved, or left half-finished.</p>
+
+  <ul class="grid">
+    <li>The Hidden Hindu Trilogy</li>
+    <li>The Art of Being Alone</li>
+    <li>Skill People</li>
+    <li>Notes on Heartbreak</li>
+    <li>The Last Act of Love</li>
+    <li>Eleanor Oliphant is Completely Fine</li>
+    <li>The Book of Tomorrow</li>
+    <li>One Indian Girl</li>
+    <li>The Girl in the Spider’s Web</li>
+    <li>The Girl Who Takes an Eye for an Eye</li>
+    <li>The Girl Who Lived Twice</li>
+    <li>Bhumika</li>
+    <li>Atomic Habits</li>
+    <li>The Secret</li>
+    <li>Ikigai</li>
+    <li>Attitude is Everything</li>
+    <li>Think Like a Monk</li>
+    <li>The Girl Who Played with Fire</li>
+    <li>The Compound Effect</li>
+    <li>As a Man Thinketh</li>
+    <li>Eat That Frog</li>
+    <li>Make Your Bed</li>
+    <li>Man’s Search for Meaning</li>
+    <li>The Key to Happiness</li>
+    <li>The Girl with the Dragon Tattoo</li>
+    <li>The Girl Who Kicked the Hornet’s Nest</li>
+    <li>The Good Girl’s Guide to Being a D*ck</li>
+    <li>Milk and Honey</li>
+    <li>Love, Hope and Magic</li>
+    <li>Do It Today</li>
+    <li>Good Vibes, Good Life</li>
+    <li>Clueless at 30</li>
+    <li>Do Epic Shit</li>
+    <li>The Kite Runner</li>
+    <li>How to Be the Best at Everything</li>
+    <li>Don’t Believe Everything You Think</li>
+    <li>The Second Brain</li>
+    <li>Adulting</li>
+    <li>Coffee with Excess Sugar</li>
+    <li>Where the Crawdads Sing</li>
+    <li>Silence</li>
+    <li>The Fault in Our Stars</li>
+    <li>The Girl Who Knew Too Much</li>
+    <li>Her Last Wish</li>
+    <li>Everyone Has a Story</li>
+    <li>Something I Never Told You</li>
+    <li>My Dark Vanessa</li>
+    <li>Pollyanna (Gujarati)</li>
+    <li>Dark Matter</li>
+    <li>Few Things Left Unsaid</li>
+    <li>To Sleep in a Sea of Stars</li>
+    <li>How Not to Die Alone</li>
+    <li>Buy Yourself the F*cking Lilies</li>
+    <li>The Alchemist</li>
+    <li>Living Beyond Your Feelings</li>
+    <li>Death: An Inside Story</li>
+    <li>F*ck, I’m in My Twenties</li>
+    <li>The Defining Decade</li>
+    <li>Stephen Hawking: Black Holes</li>
+    <li>Who Moved My Cheese</li>
+    <li>Life Is Short (So Is This Book)</li>
+    <li>The Silent Patient</li>
+    <li>The Girl Who Drank the Moon</li>
+    <li>The End of Loneliness</li>
+    <li>Birthday Girl</li>
+    <li>Before the Coffee Gets Cold</li>
+    <li>Tales from the Cafe</li>
+    <li>The Girl in the Glass Case</li>
+    <li>Before Your Memory Fades</li>
+    <li>Miracle Morning</li>
+    <li>The Leading Brain</li>
+    <li>Think and Grow Rich</li>
+    <li>How to Stop Worrying and Start Living</li>
+    <li>Something I’m Waiting to Tell You</li>
+    <li>Ghachar Ghochar</li>
+    <li>To Water Her Garden</li>
+    <li>The Strength in Our Scars</li>
+    <li>Bring Me Back</li>
+    <li>Reflections of a Man</li>
+    <li>If Cats Disappeared from the World</li>
+    <li>You²</li>
+    <li>I Fell in Love with Hope</li>
+    <li>Sweet Bean Paste</li>
+    <li>Convenience Store Woman</li>
+    <li>Salt Water</li>
+  </ul>
+
+  <a href="https://time-traveller-2014.github.io/kinjal-s-words/" class="back-link">← Back to Home</a>
+
+</body>
+</html>
+
+
+
+<a href="https://time-traveller-2014.github.io/kinjal-s-words/" class="back-link">← Back to Home</a>
