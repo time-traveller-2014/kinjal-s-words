@@ -1,3 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Read This If You Are in Your 20s</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #fdfaf7;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: #333;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      line-height: 1.9;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.15em;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 3rem;
+      text-decoration: none;
+      font-size: 1em;
+      color: #333;
+      border: 1px solid #aaa;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: #222;
+      color: white;
+      border-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
 The thing about happiness is—it lies in little moments.
 It’s not constant, and it never will be.
 Collect the pieces while you still can.
@@ -31,3 +86,8 @@ Enjoy those little moments.
 Your life lies in them.
 Your life will be the collection of each one—
 And nothing else.
+  
+<a class="back-link" href="index.html">← Back to Home</a>
+  </div>
+</body>
+</html>
