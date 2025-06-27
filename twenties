@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Read This If You Are in Your 20s</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #fdfaf7;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: #333;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      line-height: 1.9;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.15em;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 3rem;
+      text-decoration: none;
+      font-size: 1em;
+      color: #333;
+      border: 1px solid #aaa;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: #222;
+      color: white;
+      border-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Things You Will Feel in Your 20s</h1>
+    <p>1. You will be surrounded by the people you love and the people who love you, but at times you’ll still feel lonely. There will be times when you cannot relate to anything and that will be a tough duration to go through. Be gentle with yourself, trust yourself, have faith and be a little bit patient. As long as you’re taking care of yourself and nothing else matters more than that, you will be able to get through that.</p>
+
+    <p>2. In your twenties you’ll mostly feel confused—even about the things you love and the people you love. You’ll doubt your smallest decisions to your biggest life-changing ones. There will be uncertainties and doubts crippling inside your mind. You’ll be confused about what to make for dinner to whether or not you have chosen the right career. Try to trust yourself even if things don’t work out. They’ll make a path to the things that are for you.</p>
+
+    <p>3. Sometimes you’ll just want to stay silent. No words. No desire to express emotions or thoughts. There will be times when you’ll want to shut the world and be in solitude for a while. And let me tell you—that’s absolutely fine. But make sure that you come back stronger than before rather than getting worse. Choosing solitude doesn’t mean shutting out people. Let them know. They care.</p>
+
+    <p>4. One of the most important ones—you must learn to trust yourself through thick & thin, through good & bad, and everything in between. Be aware of yourself, explore yourself, trust your instincts. That’s the base of becoming the person you want to be. Because at some point, people you love and those who love you may have to leave. You must learn to be okay with it. No one stays forever. Be strong on the inside so nothing damages your confidence.</p>
+
+    <a class="back-link" href="index.html">← Back to Home</a>
+  </div>
+</body>
+</html>
