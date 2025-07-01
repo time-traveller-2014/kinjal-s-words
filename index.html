@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kinjal Patel | Official Website</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+  
   <style>
     @font-face {
       font-family: 'Centaur';
       src: url('fonts/centaur.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
     }
 
     body {
@@ -16,33 +19,43 @@
       font-family: 'Centaur', 'Cormorant Garamond', Georgia, serif;
       background: #fdfcf9;
       color: #222;
-      text-align: center;
       font-size: 19px;
       line-height: 1.85;
+      text-align: center;
     }
 
     nav {
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
       flex-wrap: wrap;
-      background-color: #f0ebe5;
-      padding: 1rem 0;
-      font-size: 1.1em;
-      border-bottom: 1px solid #ddd;
+      gap: 1rem;
+      margin-top: 2rem;
+      font-family: 'Cormorant Garamond', Georgia, serif;
     }
 
     nav a {
       text-decoration: none;
-      color: #444;
-      padding: 0.5rem 1rem;
+      color: #333;
+      padding: 8px 18px;
       border-radius: 20px;
       transition: all 0.3s ease;
+      font-size: 1.1em;
     }
 
     nav a:hover {
-      background-color: #222;
+      background-color: #eee;
+      color: #000;
+    }
+
+    .shop-nav {
+      background-color: #1f1f1f;
       color: white;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .shop-nav:hover {
+      background-color: #333;
     }
 
     .profile-header {
@@ -82,20 +95,58 @@
       padding: 0 1rem;
     }
 
+    .poetic-line {
+      font-style: italic;
+      font-size: 1.3em;
+      color: #555;
+      max-width: 640px;
+      margin: 2.5rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      padding: 4rem 1rem 2rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    section p,
+    section li {
+      font-size: 1.15em;
+      line-height: 1.9;
+    }
+
+    h2 {
+      font-size: 2em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      text-align: left;
+      padding-left: 20px;
+      margin-top: 1em;
+    }
+
+    li {
+      margin-bottom: 2.5em;
+    }
+
     .read-button,
     .shop-button {
       background-color: #1f1f1f;
       color: white;
       padding: 14px 28px;
       border-radius: 30px;
-      font-size: 1.1em;
+      font-size: 1.15em;
       font-family: 'Cormorant Garamond', Georgia, serif;
-      margin: 0.8rem 0.5rem;
+      margin-top: 30px;
       text-decoration: none;
       display: inline-block;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: all 0.3s ease;
-      max-width: 90%;
     }
 
     .read-button:hover,
@@ -104,23 +155,14 @@
     }
 
     @media screen and (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-
       body {
         font-size: 17px;
       }
-
+      .poetic-line {
+        font-size: 1.2em;
+      }
       .profile-header h1 {
         font-size: 2em;
-      }
-
-      .read-button,
-      .shop-button {
-        font-size: 1em;
-        padding: 12px 20px;
       }
     }
   </style>
@@ -128,15 +170,18 @@
 
 <body>
 
+  <!-- Navigation Bar -->
   <nav>
     <a href="index.html">Home</a>
     <a href="research.html">Research</a>
     <a href="twenties.html">For 20s</a>
     <a href="happiness.html">Happiness</a>
     <a href="booklist.html">Reading List</a>
+    <a href="shop.html" class="shop-nav">🛍️ Shop</a>
     <a href="mailto:your@email.com">Contact</a>
   </nav>
 
+  <!-- Profile Section -->
   <div class="profile-header">
     <img src="images/profile.jpg" alt="Kinjal Patel" />
     <h1>KINJAL PATEL</h1>
@@ -146,11 +191,15 @@
     </div>
   </div>
 
-  <!-- Main Buttons -->
-  <a class="read-button" href="twenties.html">📖 Read This If You Are in Your 20s</a>
-  <a class="read-button" href="happiness.html">🌻 Read This If You’ve Forgotten What Happiness Looks Like</a>
-  <a class="shop-button" href="booklist.html">📚 Reading List</a>
-  <a class="shop-button" href="shop.html">🛍️ Buy My Book on Amazon</a>
+  <div class="poetic-line">
+    “I study what doesn’t exist. And I write what can't be said.” — Kinjal
+  </div>
+
+  <a href="twenties.html" class="read-button">📖 Read This If You Are in Your 20s</a>
+  <a href="happiness.html" class="read-button">📖 Read This If You’ve Forgotten What Happiness Looks Like</a>
+  <a href="booklist.html" class="shop-button">📚 Reading List</a>
+
+  <!-- Optional: Drop a Thought section, Research articles, Buy me a coffee etc. can follow here -->
 
 </body>
 </html>
