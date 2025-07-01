@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kinjal Patel | Official Website</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
-  
+
   <style>
     @font-face {
       font-family: 'Centaur';
@@ -29,33 +29,25 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 1rem;
-      margin-top: 2rem;
+      margin: 2rem 0;
       font-family: 'Cormorant Garamond', Georgia, serif;
     }
 
     nav a {
       text-decoration: none;
-      color: #333;
-      padding: 8px 18px;
-      border-radius: 20px;
+      color: #222;
+      padding: 10px 24px;
+      border-radius: 30px;
+      border: 1px solid #ccc;
       transition: all 0.3s ease;
-      font-size: 1.1em;
+      font-size: 1.05em;
+      background-color: #fff;
     }
 
     nav a:hover {
-      background-color: #eee;
+      background-color: #f0ece4;
       color: #000;
-    }
-
-    .shop-nav {
-      background-color: #1f1f1f;
-      color: white;
-      font-weight: 500;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .shop-nav:hover {
-      background-color: #333;
+      border-color: #bbb;
     }
 
     .profile-header {
@@ -71,7 +63,7 @@
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
     .profile-header h1 {
@@ -104,63 +96,35 @@
       padding: 0 1rem;
     }
 
-    section {
-      padding: 4rem 1rem 2rem;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    section p,
-    section li {
-      font-size: 1.15em;
-      line-height: 1.9;
-    }
-
-    h2 {
-      font-size: 2em;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.3em;
-      margin-bottom: 1.5rem;
-    }
-
-    ul {
-      list-style-type: disc;
-      text-align: left;
-      padding-left: 20px;
-      margin-top: 1em;
-    }
-
-    li {
-      margin-bottom: 2.5em;
-    }
-
-    .read-button,
-    .shop-button {
-      background-color: #1f1f1f;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 30px;
-      font-size: 1.15em;
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      margin-top: 30px;
-      text-decoration: none;
+    .button {
       display: inline-block;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 12px auto;
+      padding: 12px 28px;
+      border-radius: 30px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      font-size: 1.1em;
+      color: #222;
+      text-decoration: none;
+      font-family: 'Cormorant Garamond', Georgia, serif;
       transition: all 0.3s ease;
     }
 
-    .read-button:hover,
-    .shop-button:hover {
-      background-color: #333;
+    .button:hover {
+      background-color: #f0ece4;
+      border-color: #aaa;
+      color: #000;
     }
 
     @media screen and (max-width: 600px) {
       body {
         font-size: 17px;
       }
+
       .poetic-line {
         font-size: 1.2em;
       }
+
       .profile-header h1 {
         font-size: 2em;
       }
@@ -177,7 +141,7 @@
     <a href="twenties.html">For 20s</a>
     <a href="happiness.html">Happiness</a>
     <a href="booklist.html">Reading List</a>
-    <a href="shop.html" class="shop-nav">🛍️ Shop</a>
+    <a href="shop.html">Shop 🛍️</a>
     <a href="mailto:your@email.com">Contact</a>
   </nav>
 
@@ -195,11 +159,7 @@
     “I study what doesn’t exist. And I write what can't be said.” — Kinjal
   </div>
 
-  <a href="twenties.html" class="read-button">📖 Read This If You Are in Your 20s</a>
-  <a href="happiness.html" class="read-button">📖 Read This If You’ve Forgotten What Happiness Looks Like</a>
-  <a href="booklist.html" class="shop-button">📚 Reading List</a>
-
-  <!-- Optional: Drop a Thought section, Research articles, Buy me a coffee etc. can follow here -->
+ 
 
 </body>
 </html>
