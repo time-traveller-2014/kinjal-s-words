@@ -5,23 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kinjal Patel | Official Website</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
-
   <style>
     @font-face {
       font-family: 'Centaur';
       src: url('fonts/centaur.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
     }
 
     body {
       margin: 0;
       font-family: 'Centaur', 'Cormorant Garamond', Georgia, serif;
-      font-size: 19px;
-      line-height: 1.85;
       background: #fdfcf9;
       color: #222;
       text-align: center;
+      font-size: 19px;
+      line-height: 1.85;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      background-color: #f0ebe5;
+      padding: 1rem 0;
+      font-size: 1.1em;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #222;
+      color: white;
     }
 
     .profile-header {
@@ -52,108 +73,45 @@
       color: #555;
     }
 
-    .poetic-line {
-      font-style: italic;
-      font-size: 1.3em;
-      color: #555;
+    .intro {
       max-width: 640px;
-      margin: 2.5rem auto;
+      margin: 2rem auto;
+      font-size: 1.1em;
+      color: #444;
+      font-style: italic;
       padding: 0 1rem;
     }
 
-    section {
-      padding: 4rem 1rem 2rem;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    section p,
-    section li {
-      font-size: 1.15em;
-      line-height: 1.9;
-    }
-
-    h2 {
-      font-size: 2em;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.3em;
-      margin-bottom: 1.5rem;
-    }
-
-    ul {
-      list-style-type: disc;
-      text-align: left;
-      padding-left: 20px;
-      margin-top: 1em;
-    }
-
-    li {
-      margin-bottom: 2.5em;
-    }
-
-    .read-button {
-      background-color: #1f1f1f;
-      color: white;
-      padding: 12px 26px;
-      border-radius: 30px;
-      font-size: 1.1em;
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      margin-top: 10px;
-      text-decoration: none;
-      display: inline-block;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: background-color 0.3s ease;
-    }
-
-    .read-button:hover {
-      background-color: #333;
-    }
-
+    .read-button,
     .shop-button {
       background-color: #1f1f1f;
       color: white;
       padding: 14px 28px;
       border-radius: 30px;
-      font-size: 1.15em;
+      font-size: 1.1em;
       font-family: 'Cormorant Garamond', Georgia, serif;
-      margin-top: 30px;
+      margin: 1rem 0.5rem;
       text-decoration: none;
       display: inline-block;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: all 0.3s ease;
     }
 
+    .read-button:hover,
     .shop-button:hover {
       background-color: #333;
     }
 
-    .twenties-button {
-      background: linear-gradient(135deg, #7f5539, #b08968);
-      color: #fff;
-      padding: 14px 32px;
-      font-size: 1.15em;
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      border: none;
-      border-radius: 40px;
-      text-decoration: none;
-      display: inline-block;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-      margin: 40px auto 10px;
-      transition: all 0.3s ease;
-    }
-
-    .twenties-button:hover {
-      background: linear-gradient(135deg, #5a3928, #8d674c);
-      transform: scale(1.03);
-    }
-
     @media screen and (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
       body {
         font-size: 17px;
       }
-      .poetic-line {
-        font-size: 1.2em;
-      }
+
       .profile-header h1 {
         font-size: 2em;
       }
@@ -163,97 +121,30 @@
 
 <body>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="twenties.html">For 20s</a>
+    <a href="happiness.html">Happiness</a>
+    <a href="booklist.html">Reading List</a>
+    <a href="mailto:your@email.com">Contact</a>
+  </nav>
+
   <div class="profile-header">
     <img src="images/profile.jpg" alt="Kinjal Patel" />
     <h1>KINJAL PATEL</h1>
     <p>Researcher. Writer. Quietly documenting what lives between particles and people.</p>
-
-    <div class="intro" style="max-width: 640px; margin: 2rem auto; font-size: 1.1em; color: #444; font-style: italic; padding: 0 1rem;">
+    <div class="intro">
       I am Kinjal — a physicist by education, a poet by inclination. Currently, I'm pursuing my PhD in high energy particle physics. I spend my days studying what can’t be seen and my nights writing what can’t be said. Somewhere between quantum equations and unsent letters, I try to make sense of both particles and people.
     </div>
   </div>
 
-  <!-- Aesthetic Twenties Button -->
-  <a href="twenties.html" class="twenties-button">📖 Read This If You <br> Are in Your 20s</a>
-   
-<a href="happiness.html" class="twenties-button" style="
-  white-space: normal;
-  max-width: 380px;
-  display: inline-block;
-  padding: 14px 28px;
-  margin: 1.2rem auto;
-  font-size: 1.1em;
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  background: linear-gradient(to right, #6f4e37, #3e2723);
-  color: #fff;
-  border-radius: 30px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-  transition: background 0.3s ease;
-">
-📖 Read This If You Have Forgotten What<br>Happiness Looks Like
-</a>
-
-
-  <section id="research">
-    <h2>You can read my Research Articles below</h2>
-    <ul>
-      <li>
-        <strong>Transition Properties of Doubly Heavy Baryons</strong><br>
-        <em>Published in International Journal of Theoretical Physics (IJTP, 2025)</em><br>
-        <a class="read-button" href="https://doi.org/10.1007/s10773-025-05997-5" target="_blank">Read Full Article</a>
-      </li>
-      <li>
-        <strong>Electromagnetic and Weak Decay Properties of Singly Heavy Baryons</strong><br>
-        <em>Published in European Physical Journal Plus (EPJP, 2025)</em><br>
-        <a class="read-button" href="https://doi.org/10.1140/epjp/s13360-025-06398-7" target="_blank">Read Full Article</a>
-      </li>
-    </ul>
-  </section>
-
-  <section id="drop-thought">
-    <h2>Drop a Thought</h2>
-    <p style="max-width: 600px; margin: 0 auto; font-style: italic;">
-      A question, a quiet ache, or a thought you need to let go of — I’ll hold it with care.
-    </p>
-
-    <button onclick="document.getElementById('thought-form').style.display='block'" style="margin: 1.5rem auto; padding: 12px 24px; border-radius: 30px; font-size: 1.1em; font-family: Georgia, serif; background-color: #1f1f1f; color: white; border: none; cursor: pointer;">
-      💬 Drop a Thought
-    </button>
-
-    <form id="thought-form" action="https://formsubmit.co/your@email.com" method="POST" style="display:none; max-width: 500px; margin: 2rem auto;">
-      <input type="text" name="name" placeholder="Your name (optional)" style="width: 100%; padding: 10px; margin-bottom: 10px; font-family: Georgia, serif;" />
-      <textarea name="message" rows="5" placeholder="What would you like to share?" required style="width: 100%; padding: 10px; font-family: Georgia, serif;"></textarea>
-      <button type="submit" class="shop-button" style="margin-top: 15px;">Send</button>
-      <input type="hidden" name="_captcha" value="false">
-    </form>
-  </section>
-
+  <!-- Your existing sections and buttons go below -->
+  <!-- Example buttons -->
+  <a class="read-button" href="twenties.html">📖 Read This If You Are in Your 20s</a>
+  <a class="read-button" href="happiness.html">🌻 Read This If You’ve Forgotten What Happiness Looks Like</a>
   <a class="shop-button" href="booklist.html">📚 Reading List</a>
   <a class="shop-button" href="https://amzn.in/d/38fGir8" target="_blank">🛍️ Buy My Book on Amazon</a>
-
-  <!-- Buy Me a Coffee Section -->
-  <section style="text-align: center; padding: 2rem;">
-    <h2>Support My Work ☕</h2>
-    <p>If you like what I do, you can buy me a coffee!</p>
-
-    <a href="upi://pay?pa=travellertime932@okicici&pn=Kinjal%20Patel&am=150&cu=INR&tn=Thanks%20for%20the%20coffee!"
-       target="_blank"
-       style="display: inline-block; text-decoration: none;">
-      <img src="https://png.pngtree.com/png-vector/20230707/ourlarge/pngtree-iced-coffee-clip-art-png-image_7505161.png"
-           alt="Buy Me a Coffee"
-           style="height: 100px; margin: 1rem auto;">
-    </a>
-
-    <p style="font-size: 0.95em; color: #666; margin-top: 1rem;">
-      <em>(The UPI button works only on mobile apps. If you're on desktop, use the QR code below.)</em>
-    </p>
-
-    <div style="margin-top: 1rem;">
-      <p>Or scan this QR code:</p>
-      <img src="qr.jpg" alt="Google Pay QR Code" style="width: 200px; border-radius: 12px;">
-    </div>
-  </section>
 
 </body>
 </html>
