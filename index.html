@@ -10,6 +10,8 @@
     @font-face {
       font-family: 'Centaur';
       src: url('fonts/centaur.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
     }
 
     body {
@@ -94,6 +96,7 @@
       padding: 0 1rem;
     }
 
+    .button,
     .shop-button,
     .anon-button {
       background-color: #1f1f1f;
@@ -109,6 +112,7 @@
       transition: all 0.3s ease;
     }
 
+    .button:hover,
     .shop-button:hover,
     .anon-button:hover {
       background-color: #333;
@@ -118,9 +122,11 @@
       body {
         font-size: 17px;
       }
+
       .poetic-line {
         font-size: 1.2em;
       }
+
       .profile-header h1 {
         font-size: 2em;
       }
@@ -130,7 +136,7 @@
 
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="research.html">Research</a>
@@ -155,8 +161,8 @@
     “I study what doesn’t exist. And I write what can't be said.” — Kinjal
   </div>
 
-  <!-- Anonymous Message Section -->
-  <section style="text-align: center; padding: 4rem 1rem;">
+  <!-- Submit Message Anonymously Section -->
+  <section style="padding: 4rem 1rem;">
     <h2>Send a Message Anonymously 💌</h2>
     <p style="max-width: 600px; margin: 0 auto; font-style: italic; color: #555;">
       Something you’ve been meaning to say, something you need to let go of — share it anonymously. I’ll read it with care.
@@ -169,11 +175,9 @@
   </section>
 
   <!-- Buy Me a Coffee Section -->
-  <section style="text-align: center; padding: 4rem 1rem;">
+  <section style="padding: 4rem 1rem;">
     <h2>Support My Work ☕</h2>
     <p>If you like what I do, you can buy me a coffee!</p>
-
-    <!-- UPI Payment Button -->
     <a href="upi://pay?pa=travellertime932@okicici&pn=Kinjal%20Patel&am=150&cu=INR&tn=Thanks%20for%20the%20coffee!" 
        target="_blank" 
        style="display: inline-block; text-decoration: none;">
@@ -181,10 +185,12 @@
            alt="Buy Me a Coffee" 
            style="height: 90px; margin: 1rem auto;">
     </a>
-
     <p style="font-size: 0.95em; color: #666; margin-top: 1rem;">
-      <em>(The button works only on mobile apps. For desktop, contact directly.)</em>
+      <em>(UPI works on mobile apps only. If you're on desktop, feel free to contact instead.)</em>
     </p>
+
+    <!-- Optional QR code image -->
+    <img src="images/qr.jpg" alt="Scan QR" style="width: 180px; margin-top: 1rem; border-radius: 12px;" />
   </section>
 
 </body>
