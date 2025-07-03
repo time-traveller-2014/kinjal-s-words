@@ -96,35 +96,33 @@
       padding: 0 1rem;
     }
 
-    .button {
-      display: inline-block;
-      margin: 12px auto;
-      padding: 12px 28px;
+    .shop-button,
+    .anon-button {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 14px 28px;
       border-radius: 30px;
-      border: 1px solid #ccc;
-      background-color: #fff;
-      font-size: 1.1em;
-      color: #222;
-      text-decoration: none;
+      font-size: 1.15em;
       font-family: 'Cormorant Garamond', Georgia, serif;
+      margin: 1.5rem auto;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
     }
 
-    .button:hover {
-      background-color: #f0ece4;
-      border-color: #aaa;
-      color: #000;
+    .shop-button:hover,
+    .anon-button:hover {
+      background-color: #333;
     }
 
     @media screen and (max-width: 600px) {
       body {
         font-size: 17px;
       }
-
       .poetic-line {
         font-size: 1.2em;
       }
-
       .profile-header h1 {
         font-size: 2em;
       }
@@ -159,18 +157,42 @@
     “I study what doesn’t exist. And I write what can't be said.” — Kinjal
   </div>
 
- <section style="text-align: center; padding: 4rem 1rem;">
-  <h2>Send a Message Anonymously 💌</h2>
-  <p style="max-width: 600px; margin: 0 auto; font-style: italic; color: #555;">
-    Something you’ve been meaning to say, something you need to let go of — share it anonymously. I’ll read it with care.
-  </p>
+  <!-- Anonymous Message Section -->
+  <section style="text-align: center; padding: 4rem 1rem;">
+    <h2>Send a Message Anonymously 💌</h2>
+    <p style="max-width: 600px; margin: 0 auto; font-style: italic; color: #555;">
+      Something you’ve been meaning to say, something you need to let go of — share it anonymously. I’ll read it with care.
+    </p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeexampleformurl/viewform" target="_blank"
+       class="anon-button">
+      🕊️ Submit Your Message
+    </a>
+  </section>
 
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeexampleformurl/viewform" target="_blank"
-     class="shop-button" style="margin-top: 2rem;">
-    🕊️ Submit Your Message
-  </a>
-</section>
+  <!-- Buy Me a Coffee Section -->
+  <section style="text-align: center; padding: 4rem 1rem;">
+    <h2>Support My Work ☕</h2>
+    <p>If you like what I do, you can buy me a coffee!</p>
 
+    <!-- Clickable UPI Link -->
+    <a href="upi://pay?pa=travellertime932@okicici&pn=Kinjal%20Patel&am=150&cu=INR&tn=Thanks%20for%20the%20coffee!" 
+       target="_blank" 
+       style="display: inline-block; text-decoration: none;">
+      <img src="https://png.pngtree.com/png-vector/20230707/ourlarge/pngtree-iced-coffee-clip-art-png-image_7505161.png" 
+           alt="Buy Me a Coffee" 
+           style="height: 90px; margin: 1rem auto;">
+    </a>
+
+    <p style="font-size: 0.95em; color: #666; margin-top: 1rem;">
+      <em>(The UPI button works only on mobile apps. If you're on desktop, use the QR code below.)</em>
+    </p>
+
+    <!-- QR Code Section -->
+    <div style="margin-top: 1rem;">
+      <p>Or scan this QR code:</p>
+      <img src="qr.jpg" alt="Google Pay QR Code" style="width: 200px; border-radius: 12px;">
+    </div>
+  </section>
 
 </body>
 </html>
